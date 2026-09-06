@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-purple-900: #512051;
+  --color-purple-300: #927b91;
+  --color-purple-100: #f7f2f7;
+  --color-pink-400: #ee69a4;
+  /* Typography */
+  --font-spartan: "League Spartan", sans-serif;
+  /* Spacing */
+  --spacing-0: 0rem; /* 0px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-600: 3rem; /* 48px */
+  --spacing-1200: 6rem; /* 96px */
+}
+
+@utility text-preset-1 {
+  font-family: var(--font-spartan);
+  font-weight: 700; /* bold */
+  font-size: 3.5rem; /* 56px */
+  line-height: 85%; /* 48px */
+  letter-spacing: -0.125rem; /* -2px */
+}
+
+@utility text-preset-2 {
+  font-family: var(--font-spartan);
+  font-weight: 700; /* bold */
+  font-size: 2.5rem; /* 40px */
+  line-height: 85%; /* 34px */
+  letter-spacing: -0.125rem; /* -2px */
+}
+
+@utility text-preset-3 {
+  font-family: var(--font-spartan);
+  font-weight: 500; /* medium */
+  font-size: 1.188rem; /* 19px */
+  line-height: 135%; /* 26px */
+  letter-spacing: -0.038rem; /* -1px */
+}
+
+@utility text-preset-4-bold {
+  font-family: var(--font-spartan);
+  font-weight: 700; /* bold */
+  font-size: 1.063rem; /* 17px */
+  line-height: 100%; /* 17px */
+  letter-spacing: 0rem; /* 0px */
+}
+
+@utility text-preset-4-medium {
+  font-family: var(--font-spartan);
+  font-weight: 500; /* medium */
+  font-size: 1.063rem; /* 17px */
+  line-height: 130%; /* 22px */
+  letter-spacing: -0.019rem; /* 0px */
+}
+
+@utility text-preset-4-regular {
+  font-family: var(--font-spartan);
+  font-weight: 400; /* regular */
+  font-size: 1.063rem; /* 17px */
+  line-height: 100%; /* 17px */
+  letter-spacing: 0rem; /* 0px */
+}
+
+@utility bg-pattern {
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    top right,
+    bottom left;
+  background-size: auto, auto;
+  background-image:
+    url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
+
+  @media (width >= 40rem) {
+    background-image:
+      url(/images/bg-pattern-top-desktop.svg),
+      url(/images/bg-pattern-bottom-desktop.svg);
+  }
+}
